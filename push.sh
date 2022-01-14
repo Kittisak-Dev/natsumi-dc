@@ -11,6 +11,6 @@ echo "[LOG] Committing"
 read -p "commit message: " msgInput
 
 git commit --author="$name <$mail>" -m "$msgInput"
-git push -u origin "main"
+git push -u -f origin "main"
 
 echo "[LOG] Successfully committed and pushed"
