@@ -1,0 +1,21 @@
+{
+    "name": "natsumi-bot",
+    "version": "1.0.0",
+    "description": "Natsumi bot",
+    "main": "src/main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "Natsumi"
+    ],
+    "author": "GolFSeeKr",
+    "license": "MIT",
+    "devDependencies": {
+        "discord.js": "^13.5.1",
+        "dotenv": "^11.0.0",
+        "eslint": "^8.6.0",
+        "mongoose": "^6.1.6",
+        "prettier": "^2.5.1"
+    }
+}
