@@ -1,4 +1,7 @@
-const { Client: DJS } = require(`discord.js`);
+const { Client: DJS } = require(`discord.js`),
+    { glob } = require('glob'),
+    { promisify } = require('util'),
+    filePath = promisify(glob);
 
 require(`dotenv`).config();
 
@@ -22,6 +25,10 @@ class Client extends DJS {
                 process.exit(1);
             })
             .finally(() => console.log(`Client Mode :`, this.mode));
+
+        filePath(`${process.cwd()}/src/events/**/*.js`).then((dirs) =>
+            dirs.forEach((dir) => require(`${dir}`)(this))
+        );
     }
 }
 
