@@ -12,7 +12,6 @@ class Client extends DJS {
             process.env.MODE === `development` ? `development` : `production`;
     }
     online() {
-        console.clear;
         this.login(
             this.mode === 'development'
                 ? `${process.env.DEV_TOKEN}`
