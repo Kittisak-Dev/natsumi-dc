@@ -2,9 +2,12 @@
     "name": "natsumi-bot",
     "version": "1.0.0",
     "description": "Natsumi bot",
-    "main": "src/main.js",
+    "main": "build/index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "build": "tsc",
+        "dev": "npx ts-node-dev --respawn ./src/main.ts --enable-source-maps",
+        "run": "node .",
+        "start": "npm run build && npm run run"
     },
     "keywords": [
         "Natsumi"
@@ -17,6 +20,11 @@
         "eslint": "^8.6.0",
         "glob": "^7.2.0",
         "mongoose": "^6.1.6",
-        "prettier": "^2.5.1"
+        "prettier": "^2.5.1",
+        "typescript": "^4.5.5"
+    },
+    "engines": {
+        "npm": ">=8.0.0",
+        "node": ">=17.0.0"
     }
 }
