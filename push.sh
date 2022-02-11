@@ -1,6 +1,6 @@
 echo "[LOG] Executing bash script"
 
-source .env
+source .github
 
 git add "."
 git config --local user.name "$name"

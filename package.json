@@ -2,26 +2,21 @@
     "name": "natsumi-bot",
     "version": "1.0.0",
     "description": "Natsumi bot",
-    "main": "build/index.js",
-    "scripts": {
-        "build": "tsc",
-        "dev": "npx ts-node-dev --respawn ./src/main.ts --enable-source-maps",
-        "run": "node .",
-        "start": "npm run build && npm run run"
-    },
+    "main": "src/index.js",
+    "scripts": {},
     "keywords": [
         "Natsumi"
     ],
     "author": "GolFSeeKr",
     "license": "MIT",
     "devDependencies": {
+        "colors": "^1.4.0",
         "discord.js": "^13.5.1",
         "dotenv": "^11.0.0",
         "eslint": "^8.6.0",
         "glob": "^7.2.0",
         "mongoose": "^6.1.6",
-        "prettier": "^2.5.1",
-        "typescript": "^4.5.5"
+        "prettier": "^2.5.1"
     },
     "engines": {
         "npm": ">=8.0.0",

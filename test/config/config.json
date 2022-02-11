@@ -1,8 +1,0 @@
-{
-    "token": "env",
-    "commandsPath": "path-to-commands-dir",
-    "eventsPath": "path-to-events-dir",
-    "commandLoadedMessage": true,
-    "eventLoadedMessage": true,
-    "permissionData": {}
-}
