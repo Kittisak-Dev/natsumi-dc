@@ -1,7 +1,7 @@
 require('dotenv').config();
 require('colors');
 
-const { Client: DiscordClient } = require('discord.js'),
+const { Client: DiscordClient, Collection } = require('discord.js'),
     glob = require('glob'),
     filePath = require('util').promisify(glob);
 
@@ -10,6 +10,8 @@ class Client extends DiscordClient {
         super({
             intents: ['GUILDS', 'GUILD_MESSAGES'],
         });
+        /** @type {import('../interfaces/Client').Commands} */
+        this.commands = new Collection();
         this.dev_mode = process.env.MODE === 'dev';
         this.dev_token = process.env.DEV_TOKEN;
         this.product_token = process.env.TOKEN;
