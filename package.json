@@ -10,7 +10,7 @@
     "author": "GolFSeeKr",
     "license": "MIT",
     "devDependencies": {
-        "colors": "^1.4.1",
+        "colors": "^1.4.0",
         "discord.js": "^13.5.1",
         "dotenv": "^11.0.0",
         "eslint": "^8.6.0",
